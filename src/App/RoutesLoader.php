@@ -25,21 +25,21 @@ class RoutesLoader
     public function bindRoutesToControllers()
     {
     	/**
-    	 * @SWG\Resource(basePath="http://localhost:9001/api/v1", resourcePath="/notes")
+    	 * @SWG\Resource(basePath="/api/v1",resourcePath="/notes")
     	 */
     	$api = $this->app["controllers_factory"];
         
         /**
          * @SWG\Api(
          *   path="/notes",
-         *   description="Operation sur les notes", 
+         *   description="Operations on notes", 
          *   @SWG\Operation(
          *      method="GET", 
-		 *		summary="Rechercher toutes les notes",
+		 *		summary="Find all notes",
          *      nickname="getAllNotes",
          *      type="array", items="$ref:note",
-         *   	@SWG\ResponseMessage(code=404, message="Note non trouvée"),
-         *      @SWG\ResponseMessage(code=200, message="Note trouvée")
+         *   	@SWG\ResponseMessage(code=404, message="Note not found"),
+         *      @SWG\ResponseMessage(code=200, message="Note found")
          *   )
          * )
          */
@@ -51,10 +51,25 @@ class RoutesLoader
          *   path="/notes",
          *   @SWG\Operation(
          *      method="POST",
-         *      summary="Creation d'une note",
+         *      summary="Create a new note",
          *      nickname="createANote",
-         *   	@SWG\ResponseMessage(code=404, message="Note non trouvée"),
-         *      @SWG\ResponseMessage(code=200, message="Note trouvée")
+         *      type="note",
+         *      @SWG\Parameter(
+		 *           name="id",
+		 *           description="note's identifier",
+		 *           paramType="path",
+		 *           required=false,
+		 *           type="string"
+		 *      ),
+         *      @SWG\Parameter(
+		 *           name="note",
+		 *           description="The note's content",
+		 *           paramType="body",
+		 *           required=true,
+		 *           type="string"
+		 *      ),   
+         *   	@SWG\ResponseMessage(code=404, message="Note not found"),
+         *      @SWG\ResponseMessage(code=200, message="Note found")
          *   )
          * )
          */
@@ -65,26 +80,26 @@ class RoutesLoader
          *   path="/notes/{id}",
          *   @SWG\Operation(
          *      method="POST",
-         *      summary="Mise à jour d'une note",
-         *      notes="C'est pour mettre à jour les notes",
+         *      summary="Update an existint note",
+         *      notes="Use this operation to update an existing note",
          *      nickname="updateANote",
          *      type="note",
          *      @SWG\Parameter(
 		 *           name="id",
-		 *           description="Identifiant de la note",
+		 *           description="note's identifier",
 		 *           paramType="path",
 		 *           required=true,
 		 *           type="string"
 		 *      ),
          *      @SWG\Parameter(
 		 *           name="note",
-		 *           description="La note",
+		 *           description="The note's content",
 		 *           paramType="body",
 		 *           required=true,
-		 *           type="note"
+		 *           type="string"
 		 *      ),   
-         *   	@SWG\ResponseMessage(code=404, message="Note non trouvée"),
-         *   	@SWG\ResponseMessage(code=200, message="Note mise a jour",responseModel="note")
+         *   	@SWG\ResponseMessage(code=404, message="Note not found"),
+         *   	@SWG\ResponseMessage(code=200, message="Note updated",responseModel="note")
          *   )
          * )
          */        
@@ -95,18 +110,18 @@ class RoutesLoader
          *   path="/notes/{id}",
          *   @SWG\Operation(
          *      method="DELETE",
-         *      summary="Suppression d'une note",
-         *      notes="C'est pour supprimer une note",
+         *      summary="Delete a note",
+         *      notes="Use this method when you want to delete a note",
          *      nickname="deleteANote",
          *      @SWG\Parameter(
          *           name="id",
-         *           description="Identifiant de la note",
+         *           description="note's identifier",
          *           paramType="path",
          *           required=true,
          *           type="string"
          *      ),
-         *   	@SWG\ResponseMessage(code=404, message="Note non trouvée"),
-         *   	@SWG\ResponseMessage(code=200, message="Note supprimée", responseModel="integer")
+         *   	@SWG\ResponseMessage(code=404, message="Note not found"),
+         *   	@SWG\ResponseMessage(code=200, message="Note deleted", responseModel="integer")
          *   )
          * )
          */
