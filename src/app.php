@@ -45,8 +45,8 @@ $app->before(function (Request $request) {
 
 $app->register(new JDesrosiers\Silex\Provider\SwaggerServiceProvider(), array(
 		"swagger.srcDir" => __DIR__ . "../vendor/zircote/swagger-php/library",
-		"swagger.servicePath" => __DIR__ . "/App",
-		"swagger.apiVersion" => "1",
+		"swagger.servicePath" => __DIR__ ,
+		"swagger.apiVersion" => $app['api.version'],
 ));
 
 $app->register(new ServiceControllerServiceProvider());
