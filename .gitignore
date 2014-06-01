@@ -4,3 +4,7 @@ app/logs/*.log
 *~
 .idea
 app.db
+.settings
+.project
+.buildpath
+composer.phar
