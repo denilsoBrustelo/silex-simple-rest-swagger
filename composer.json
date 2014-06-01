@@ -20,6 +20,9 @@
 			"homepage" : "http://vjeantet.fr"
 		}
 	],
+	"require": {
+		"php": ">=5.4.0"
+	},
 	"require" : {
 		"silex/silex" : "~1.1",
 		"monolog/monolog" : "~1.6",
