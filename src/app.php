@@ -42,6 +42,13 @@ $app->before(function (Request $request) {
     }
 });
 
+
+$app->register(new JDesrosiers\Silex\Provider\SwaggerServiceProvider(), array(
+		"swagger.srcDir" => __DIR__ . "../vendor/zircote/swagger-php/library",
+		"swagger.servicePath" => __DIR__ . "/App",
+		"swagger.apiVersion" => "1",
+));
+
 $app->register(new ServiceControllerServiceProvider());
 
 $app->register(new DoctrineServiceProvider(), array(

@@ -6,6 +6,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 
+/**
+ * @SWG\Model(id="note",
+ *     @SWG\Property(name="id",type="integer"),
+ *     @SWG\Property(name="note",type="string")
+ *  )
+ */
 class NotesController
 {
 
@@ -47,6 +53,7 @@ class NotesController
     public function getDataFromRequest(Request $request)
     {
         return $note = array(
+        	"id" => $request->request->get("id"),
             "note" => $request->request->get("note")
         );
     }

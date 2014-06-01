@@ -1,4 +1,4 @@
-# Silex Simple REST
+# Silex Simple REST with its auto generated documentation with Swagger
 [![Latest Stable Version](https://poser.pugx.org/vesparny/silex-simple-rest/v/stable.png)](https://packagist.org/packages/vesparny/silex-simple-rest) [![Total Downloads](https://poser.pugx.org/vesparny/silex-simple-rest/downloads.png)](https://packagist.org/packages/vesparny/silex-simple-rest) [![Build Status](https://secure.travis-ci.org/vesparny/silex-simple-rest.png)](http://travis-ci.org/vesparny/silex-simple-rest) [![Dependency Status](https://www.versioneye.com/user/projects/52925eba632bac8d4d0000c1/badge.png)](https://www.versioneye.com/user/projects/52925eba632bac8d4d0000c1)
 
 
