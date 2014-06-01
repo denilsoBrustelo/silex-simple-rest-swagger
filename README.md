@@ -1,7 +1,7 @@
 # Silex Simple REST with its auto generated documentation with Swagger 
 
 [![Dependency Status](https://www.versioneye.com/user/projects/538b2ece14c158f14b000011/badge.png)](https://www.versioneye.com/user/projects/538b2ece14c158f14b000011)
-
+[![Build Status](https://secure.travis-ci.org/vjeantet/silex-simple-rest-swagger.png)](http://travis-ci.org/vjeantet/silex-simple-rest-swagger)
 
 A simple silex skeleton application for writing RESTful API. 
 Based on the silex-simple-rest github repo from  [Alessandro Arnodo](http://alessandro.arnodo.net).
