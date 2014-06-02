@@ -26,9 +26,10 @@ You can install the project also as a composer project
     
 Your api is now available at [http://localhost:9001/api/v1](http://localhost:9001/api/v1).
 
-You api documentation is now available as a swagger specification at [http://localhost:9001/api/api-docs](http://localhost:9001/api/api-docs).
+You can visualise your api documentation going to : [http://localhost:9001/swagger-ui//](http://localhost:9001/swagger-ui/)
 
-You can visualise your api documentation going to : [http://petstore.swagger.wordnik.com/](http://petstore.swagger.wordnik.com/) and typing your local api swagger spec url : http://localhost:9001/api/api-docs.
+* your swagger specification (json) is available at [http://localhost:9001/api/api-docs](http://localhost:9001/api/api-docs).
+
 
   
 
