@@ -1,7 +1,10 @@
 # Silex Simple REST with its auto generated documentation with Swagger 
 
+[![License](https://poser.pugx.org/vjeantet/silex-simple-rest-swagger/license.svg)](https://packagist.org/packages/vjeantet/silex-simple-rest-swagger)
+[![Latest Stable Version](https://poser.pugx.org/vjeantet/silex-simple-rest-swagger/v/stable.svg)](https://packagist.org/packages/vjeantet/silex-simple-rest-swagger)
 [![Dependency Status](https://www.versioneye.com/user/projects/538d89226248d2304500002c/badge.png)](https://www.versioneye.com/user/projects/538d89226248d2304500002c)
 [![Build Status](https://secure.travis-ci.org/vjeantet/silex-simple-rest-swagger.png)](http://travis-ci.org/vjeantet/silex-simple-rest-swagger)
+
 
 A simple silex skeleton application for writing RESTful API. 
 Based on the silex-simple-rest github repo from  [Alessandro Arnodo](http://alessandro.arnodo.net).
